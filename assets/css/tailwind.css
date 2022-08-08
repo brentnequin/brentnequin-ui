@@ -1,0 +1,29 @@
+/* purgecss start ignore */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+/* purgecss end ignore */
+@import 'tailwindcss/utilities';
+
+.light-mode {
+    @apply bg-gray-50 text-gray-800 
+}
+
+.dark-mode {
+    @apply bg-gray-900 text-gray-300 prose-p:text-gray-400 prose-a:text-gray-400 hover:prose-a:text-gray-300 
+}
+
+.nuxt-content {
+    /* @apply */
+}
+
+.wrapper {
+    @apply shadow-md rounded bg-white ring-1 ring-black ring-opacity-5 m-4 px-4 py-2
+}
+
+.dark-mode .wrapper {
+    @apply bg-gray-800 text-gray-400
+}
+
+.dark-mode button {
+    @apply text-gray-400 hover:text-gray-300
+}
