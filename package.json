@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt ui",
-    "build": "nuxt build ui",
-    "start": "nuxt start ui",
-    "generate": "nuxt generate ui",
-    "preview": "nuxt build ui && nuxt start ui"
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "preview": "nuxt build && nuxt start"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
