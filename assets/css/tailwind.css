@@ -50,7 +50,7 @@
     @apply text-gray-400 hover:text-gray-300
 }
 
-.dark-mode div pre {
+.dark-mode div pre, .dark-mode div pre span.token.operator {
     @apply bg-gray-800 text-gray-400 text-shadow-none
 }
 
