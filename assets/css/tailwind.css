@@ -1,15 +1,33 @@
 /* purgecss start ignore */
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
+@tailwind base;
+@tailwind components;
 /* purgecss end ignore */
-@import 'tailwindcss/utilities';
+@tailwind utilities;
+
+@layer utilities {
+    .text-shadow {
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.10);
+    }
+
+    .text-shadow-md {
+        text-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.08);
+    }
+
+    .text-shadow-lg {
+        text-shadow: 0 15px 30px rgba(0, 0, 0, 0.11), 0 5px 15px rgba(0, 0, 0, 0.08);
+    }
+
+    .text-shadow-none {
+        text-shadow: none;
+    }
+}
 
 .light-mode {
     @apply bg-gray-50 text-gray-800 
 }
 
 .dark-mode {
-    @apply bg-gray-900 text-gray-300 prose-p:text-gray-400 prose-a:text-gray-400 hover:prose-a:text-gray-300 
+    @apply bg-gray-900 text-gray-300 prose-h2:text-gray-300 prose-p:text-gray-400 prose-a:text-gray-400 hover:prose-a:text-gray-300 prose-ul:text-gray-400
 }
 
 .nuxt-content {
@@ -20,6 +38,10 @@
     @apply shadow-md rounded bg-white ring-1 ring-black ring-opacity-5 m-4 px-4 py-2
 }
 
+.nuxt-content code {
+    @apply before:content-none after:content-none
+}
+
 .dark-mode .wrapper {
     @apply bg-gray-800 text-gray-400
 }
@@ -27,3 +49,13 @@
 .dark-mode button {
     @apply text-gray-400 hover:text-gray-300
 }
+
+.dark-mode div pre {
+    @apply bg-gray-800 text-gray-400 text-shadow-none
+}
+
+.dark-mode code {
+    @apply text-gray-400
+}
+
+/* .dark-mode div pre  */

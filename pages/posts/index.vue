@@ -1,7 +1,10 @@
 <template>
 <div class="container py-8">
-  <h1 class="text-3xl">{{ page.title }}</h1>
-  <nuxt-content class="mt-4 prose max-w-none" :document="page" />
+  <div v-for="(post, index) in posts" v-bind:key="index">
+    <nuxt-link :to="post.path">
+      <h1 class="text-3xl">{{ post.title }}</h1>
+    </nuxt-link>
+  </div>
 </div>
 </template>
 
@@ -16,10 +19,10 @@ export default {
 
   name: 'PostsPage',
   async asyncData ({ $content }) {
-    const page = await $content('posts').fetch()
+    const posts = await $content('posts').only(['title', 'path']).fetch()
 
     return {
-      page
+      posts
     }
   }
 }

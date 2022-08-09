@@ -29,14 +29,13 @@
 import ButtonToggleDarkMode from './ButtonToggleDarkMode.vue'
 export default {
   components: { ButtonToggleDarkMode },
-    props: ['dark'],
     data() {
         return {
             showMenu: false,
             navLinks: {
                 "Home": "/",
                 "About": "/about",
-                // "Posts": "/posts",
+                "Posts": "/posts",
                 "Projects": "/projects"
             }
         }

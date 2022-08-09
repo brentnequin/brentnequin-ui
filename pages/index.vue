@@ -27,6 +27,7 @@
 import ButtonToggleDarkMode from '../components/ButtonToggleDarkMode.vue'
 export default {
   components: { ButtonToggleDarkMode },
+  layout: 'home',
 
   head() {
     return {

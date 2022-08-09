@@ -31,13 +31,20 @@ export default {
     '@nuxtjs/color-mode', // https://v2.color-mode.nuxtjs.org/
   ],
 
-  
+
   modules: [ // Modules: https://go.nuxtjs.dev/config-modules
     '@nuxtjs/axios', // https://go.nuxtjs.dev/axios
     '@nuxt/content',
   ],
 
-  
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prismjs/themes/prism.css'
+      } 
+    } 
+  },
+
   axios: { // Axios module configuration: https://go.nuxtjs.dev/config-axios
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
     baseURL: '/',
@@ -72,8 +79,8 @@ export default {
     storageKey: 'nuxt-color-mode'
   },
 
-  purgeCSS: {    
-    whitelist: ['dark-mode'],  
+  purgeCSS: {
+    whitelist: ['dark-mode'],
   },
 
   build: { // Build Configuration: https://go.nuxtjs.dev/config-build
