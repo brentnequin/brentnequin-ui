@@ -26,9 +26,7 @@
 </template>
 
 <script>
-import ButtonToggleDarkMode from './ButtonToggleDarkMode.vue'
 export default {
-  components: { ButtonToggleDarkMode },
     data() {
         return {
             showMenu: false,
