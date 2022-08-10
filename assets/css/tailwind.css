@@ -23,7 +23,7 @@
 }
 
 .dark {
-    @apply bg-gray-900 text-gray-300 prose-p:text-gray-400
+    @apply bg-gray-900 text-gray-300 prose-p:text-gray-400 prose-li:text-gray-400
 }
 
 a, button {
@@ -41,5 +41,3 @@ a, button {
 .dark code {
     @apply text-gray-400
 }
-
-/* .dark-mode div pre  */
