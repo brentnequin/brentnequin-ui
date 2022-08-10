@@ -1,7 +1,7 @@
 module.exports = {
   darkMode: 'class',
   theme: {
-    darkSelector: '.dark-mode',
+    darkSelector: '.dark',
     container: {
       center: true,
       padding: '2rem',
@@ -14,11 +14,11 @@ module.exports = {
       },
     },
   },
-  // variants: {
-  //   backgroundColor: ['dark', 'dark-hover', 'dark-group-hover', 'dark-even', 'dark-odd', 'hover', 'responsive'],
-  //   borderColor: ['dark', 'dark-focus', 'dark-focus-within', 'hover', 'responsive'],
-  //   textColor: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive']
-  // },
+  variants: {
+    backgroundColor: ['dark', 'dark-hover', 'dark-group-hover', 'dark-even', 'dark-odd', 'hover', 'responsive'],
+    borderColor: ['dark', 'dark-focus', 'dark-focus-within', 'hover', 'responsive'],
+    textColor: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive']
+  },
   plugins: [
     require('@tailwindcss/typography'),
     require('tailwindcss-dark-mode')()

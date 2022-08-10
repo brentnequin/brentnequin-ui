@@ -1,7 +1,7 @@
 <template>
-    <button type="button" class="flex justify-center dark:bg-gray-600" v-on:click="toggleDarkMode">
+    <button type="button" class="flex justify-center" v-on:click="toggleDarkMode">
         <div class="self-center">
-            <fa class="button-toggle-dark-mode" :icon="['fas', 'lightbulb']" />
+            <fa :icon="['fas', 'lightbulb']" />
             <p v-if="withLabel" class="text-xs">{{ $colorMode.value == 'light' ? 'Dark' : 'Light' }} Mode</p>
         </div>
     </button>

@@ -5,15 +5,20 @@
         <h1 class="text-6xl">{{ title }}</h1>
         <p class="mt-3">{{ subtitle }}</p>
         <div class="flex text-2xl space-x-6 mt-10 justify-center">
-          <nuxt-link :to="icon.link" class="flex border-2 rounded w-20 h-20 justify-center" v-for="(icon, index) in icons" v-bind:key="index">
 
-            <div class="self-center">
-              <fa  :icon="[icon.type, icon.name]" />
-              <p class="text-xs">{{ icon.title }}</p>
-            </div>
-
+          <nuxt-link :to="icon.link" v-for="(icon, index) in icons" v-bind:key="index">
+            <paper class="flex border-0 rounded w-20 h-20 justify-center">
+              <div class="self-center">
+                <fa :icon="[icon.type, icon.name]" />
+                <p class="text-xs">{{ icon.title }}</p>
+              </div>
+            </paper>
           </nuxt-link>
-          <button-toggle-dark-mode type="button" class="border-2 rounded w-20 h-20" with-label />
+
+          <paper class="border-0 rounded w-20 h-20 flex justify-center">
+            <button-toggle-dark-mode type="button" with-label />
+          </paper>
+          
         </div>
       </div>
     </div>
