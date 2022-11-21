@@ -28,7 +28,7 @@ export default {
     '@nuxtjs/style-resources',
     '@nuxtjs/tailwindcss', // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/fontawesome',
-    '@nuxtjs/color-mode', // https://v2.color-mode.nuxtjs.org/
+    // '@nuxtjs/color-mode', // https://v2.color-mode.nuxtjs.org/
   ],
 
 
@@ -47,7 +47,11 @@ export default {
 
   axios: { // Axios module configuration: https://go.nuxtjs.dev/config-axios
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: '/',
+    baseURL: 'http://localhost:5000',
+  },
+
+  serverMiddleware: {
+    '/api': '~/api'
   },
 
   tailwindcss: {
@@ -68,20 +72,20 @@ export default {
     }
   },
 
-  colorMode: {
-    // preference: 'system', // default value of $colorMode.preference
-    // fallback: 'light', // fallback value if not system preference found
-    // hid: 'nuxt-color-mode-script',
-    // globalName: '__NUXT_COLOR_MODE__',
-    // componentName: 'ColorScheme',
-    // classPrefix: '',
-    classSuffix: '',
-    // storageKey: 'nuxt-color-mode'
-  },
+  // colorMode: {
+  //   // preference: 'system', // default value of $colorMode.preference
+  //   // fallback: 'light', // fallback value if not system preference found
+  //   // hid: 'nuxt-color-mode-script',
+  //   // globalName: '__NUXT_COLOR_MODE__',
+  //   // componentName: 'ColorScheme',
+  //   // classPrefix: '',
+  //   classSuffix: '',
+  //   // storageKey: 'nuxt-color-mode'
+  // },
 
-  purgeCSS: {
-    whitelist: ['dark'],
-  },
+  // purgeCSS: {
+  //   whitelist: ['dark'],
+  // },
 
   build: { // Build Configuration: https://go.nuxtjs.dev/config-build
   },

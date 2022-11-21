@@ -1,5 +1,5 @@
 <template>
-  <div class="font-serif">
+  <div class="font-m-plus-rounded-1c">
     <Nuxt />
     <TheFooter />
   </div>

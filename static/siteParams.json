@@ -1,0 +1,24 @@
+{
+    "title": "Brent Nequin",
+    "subtitle": "Programmer. Guitarist. Pizza enthusiast.",
+    "navlinks": [
+        {
+            "title": "About",
+            "iconName": "user",
+            "iconType": "fas",
+            "to": "/about"
+        },
+        {
+            "title": "Projects",
+            "iconName": "building",
+            "iconType": "fas",
+            "to": "/projects"
+        },
+        {
+            "title": "Blog",
+            "iconName": "book",
+            "iconType": "fas",
+            "to": "/blog"
+        }
+    ]
+}

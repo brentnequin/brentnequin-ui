@@ -2,6 +2,10 @@
 title: Organizing Python Unit Tests
 ---
 
+Here I will propose a way to organize unit tests with the use of a base test class that other test classes will inherit.
+
+<!--more-->
+
 ## Organizing Unit Tests for Class Methods
 
 Suppose the following class is to be tested:

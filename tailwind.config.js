@@ -13,6 +13,9 @@ module.exports = {
         '2xl': '984px',
       },
     },
+    fontFamily: {
+      'm-plus-rounded-1c': ['"M PLUS Rounded 1c"', 'sans-serif']
+    }
   },
   variants: {
     backgroundColor: ['dark', 'dark-hover', 'dark-group-hover', 'dark-even', 'dark-odd', 'hover', 'responsive'],
